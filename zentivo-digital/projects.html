@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Projects &amp; Portfolio — ZENTIVO DIGITAL</title>
+  <meta name="title" content="Projects &amp; Portfolio — ZENTIVO DIGITAL">
+  <meta name="description" content="Explore selected client concept showcases and web design case studies crafted by Zentivo Digital. High performance, modern aesthetics, and clean code.">
+  <meta name="keywords" content="Zentivo Digital Portfolio, Web Development Projects, UI UX Design Showcases, Case Studies, Frontend Projects, Vimalkumar M">
+  <meta name="author" content="ZENTIVO DIGITAL / VIMALKUMAR M">
+  <meta name="robots" content="index, follow">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logo/zentivo-logo.png">
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Top Scroll Progress Indicator -->
+  <div class="scroll-progress-bar" aria-hidden="true"></div>
+
+  <!-- Ambient Lights & Cursor Spotlight -->
+  <div class="cursor-spotlight" aria-hidden="true"></div>
+  <div class="bg-ambient-lights" aria-hidden="true">
+    <div class="ambient-orb ambient-orb-1"></div>
+    <div class="ambient-orb ambient-orb-2"></div>
+    <div class="bg-grid-mesh"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-container">
+      <a href="index.html" class="brand-link" aria-label="Zentivo Digital Homepage">
+        <div class="brand-logo-wrap">
+          <img src="assets/logo/zentivo-logo.png" alt="Zentivo Digital Logo" class="brand-logo-img" width="44" height="44">
+        </div>
+        <div class="brand-title-group">
+          <span class="brand-title">ZENTIVO <span class="brand-title-accent">DIGITAL</span></span>
+          <span class="brand-tagline">STUDIO &bull; CREATIVE LAB</span>
+        </div>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="projects.html" class="nav-link active">Projects</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-cta-group">
+        <a href="contact.html" class="btn btn-primary btn-sm">
+          <span>Let's Talk</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+        <button type="button" class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-drawer" id="mobileNavDrawer" role="dialog" aria-modal="true">
+    <div>
+      <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 32px;">
+        <img src="assets/logo/zentivo-logo.png" alt="Zentivo Logo" width="36" height="36" style="border-radius: 6px;">
+        <span style="font-family: var(--font-heading); font-size: 1.2rem; font-weight: 800; color: #fff;">ZENTIVO <span style="color: var(--accent-lime);">DIGITAL</span></span>
+      </div>
+      <ul class="mobile-nav-list">
+        <li><a href="index.html" class="mobile-nav-link">Home <span>&rarr;</span></a></li>
+        <li><a href="about.html" class="mobile-nav-link">About <span>&rarr;</span></a></li>
+        <li><a href="services.html" class="mobile-nav-link">Services <span>&rarr;</span></a></li>
+        <li><a href="projects.html" class="mobile-nav-link active">Projects <span>&rarr;</span></a></li>
+        <li><a href="contact.html" class="mobile-nav-link">Contact <span>&rarr;</span></a></li>
+      </ul>
+    </div>
+    <div class="mobile-nav-footer">
+      <a href="contact.html" class="btn btn-primary" style="width: 100%;">Let's Talk</a>
+      <p style="font-size: 0.8rem; color: var(--text-dark); text-align: center;">Founded by VIMALKUMAR M</p>
+    </div>
+  </div>
+  <div class="mobile-backdrop" id="mobileBackdrop"></div>
+
+  <!-- Main Content -->
+  <main>
+    <section class="section-spacing" style="padding-top: calc(var(--header-height) + 50px); padding-bottom: 20px;">
+      <div class="container">
+        <div class="section-header reveal reveal-up">
+          <span class="section-badge">
+            <span class="pulse-dot"></span>
+            PORTFOLIO &amp; SHOWCASE
+          </span>
+          <h1 class="section-title">Selected Projects &amp; Concept Case Studies</h1>
+          <p class="section-desc">
+            A curated collection of web applications, custom websites, and digital interfaces. Click any project to inspect its interactive case study, architecture details, and live site link.
+          </p>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="portfolio-controls reveal reveal-up">
+          <button type="button" class="filter-btn active" data-filter="All">All Projects</button>
+          <button type="button" class="filter-btn" data-filter="Web Development">Web Development</button>
+          <button type="button" class="filter-btn" data-filter="Web Design">Web Design</button>
+          <button type="button" class="filter-btn" data-filter="Digital Solutions">Digital Solutions</button>
+        </div>
+
+        <!-- Dynamic Projects Grid Container -->
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Populated from js/projects.js -->
+        </div>
+
+        <!-- Editor Instructions Box -->
+        <div class="portfolio-editor-notice reveal reveal-up" style="margin-top: 48px;">
+          <div class="editor-notice-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+          </div>
+          <div class="editor-notice-text">
+            <h5>Admin &amp; Founder Guide: Adding Your Own Projects</h5>
+            <p>
+              To replace sample concept showcases with your actual client websites:
+              <br>1. Open <code>js/projects.js</code> in your code editor.
+              <br>2. Add or update project entries with your project name, screenshot image path, category, technologies, live URL, and case study narrative.
+              <br>3. Once saved, your project instantly populates this grid, integrates with the filter system, and opens in the case study modal!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="container cta-banner-section reveal reveal-scale" style="margin-bottom: 60px;">
+      <div class="cta-banner-card">
+        <div class="cta-banner-content">
+          <span class="section-badge">
+            <span class="pulse-dot"></span>
+            CUSTOM WORK
+          </span>
+          <h2>Like What You See? Let's Build Your Vision.</h2>
+          <p>
+            From custom business websites to specialized landing pages, we build tailored solutions that deliver genuine commercial results.
+          </p>
+          <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+            <a href="contact.html" class="btn btn-primary">
+              <span>Start Your Project</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="https://wa.me/9196556 04042?text=Hello%20Zentivo%20Digital!%20I%20am%20interested%20in%20discussing%20a%20project%20based%20on%20your%20portfolio." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+              <span>Chat on WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-link">
+            <div class="brand-logo-wrap">
+              <img src="assets/logo/zentivo-logo.png" alt="Zentivo Digital Logo" class="brand-logo-img" width="44" height="44">
+            </div>
+            <div class="brand-title-group">
+              <span class="brand-title">ZENTIVO <span class="brand-title-accent">DIGITAL</span></span>
+              <span class="brand-tagline">DIGITAL AGENCY &bull; STUDIO</span>
+            </div>
+          </a>
+          <p class="footer-desc">
+            We build digital experiences that move businesses forward through creative web development, modern design, and smart digital marketing.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Navigation</h5>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About Company</a></li>
+            <li><a href="services.html" class="footer-link">Our Services</a></li>
+            <li><a href="projects.html" class="footer-link">Portfolio &amp; Work</a></li>
+            <li><a href="contact.html" class="footer-link">Contact &amp; Inquiries</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Core Services</h5>
+          <ul class="footer-links-list">
+            <li><a href="services.html" class="footer-link">Website Development</a></li>
+            <li><a href="services.html" class="footer-link">Website Design</a></li>
+            <li><a href="services.html" class="footer-link">Responsive Web Design</a></li>
+            <li><a href="services.html" class="footer-link">Digital Marketing</a></li>
+            <li><a href="services.html" class="footer-link">Landing Pages</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <div class="footer-contact-info">
+            <div class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span>+91 96556 04042</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <a href="mailto:zentiprojects@gmail.com" style="color: inherit;">zentiprojects@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 ZENTIVO DIGITAL. All rights reserved.</div>
+        <div class="footer-founder-badge">Founded by <strong>VIMALKUMAR M</strong></div>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" class="back-to-top-btn" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+  </button>
+
+  <!-- Interactive Case Study Modal Container -->
+  <div class="case-study-modal" id="caseStudyModal"></div>
+
+  <!-- JavaScript Modules -->
+  <script src="js/projects.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Services — ZENTIVO DIGITAL | Modern Web &amp; Digital Solutions</title>
+  <meta name="title" content="Services — ZENTIVO DIGITAL | Modern Web &amp; Digital Solutions">
+  <meta name="description" content="Explore Zentivo Digital's core services: Website Development, Website Design, Responsive Web Design, Digital Marketing, Landing Page Development, and Business Website Solutions.">
+  <meta name="keywords" content="Website Development, Website Design, Responsive Web Design, Digital Marketing, Landing Page Development, Business Website Solutions, Zentivo Digital Services, Vimalkumar M">
+  <meta name="author" content="ZENTIVO DIGITAL / VIMALKUMAR M">
+  <meta name="robots" content="index, follow">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logo/zentivo-logo.png">
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Top Scroll Progress Indicator -->
+  <div class="scroll-progress-bar" aria-hidden="true"></div>
+
+  <!-- Ambient Lights & Cursor Spotlight -->
+  <div class="cursor-spotlight" aria-hidden="true"></div>
+  <div class="bg-ambient-lights" aria-hidden="true">
+    <div class="ambient-orb ambient-orb-1"></div>
+    <div class="ambient-orb ambient-orb-3"></div>
+    <div class="bg-grid-mesh"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-container">
+      <a href="index.html" class="brand-link" aria-label="Zentivo Digital Homepage">
+        <div class="brand-logo-wrap">
+          <img src="assets/logo/zentivo-logo.png" alt="Zentivo Digital Logo" class="brand-logo-img" width="44" height="44">
+        </div>
+        <div class="brand-title-group">
+          <span class="brand-title">ZENTIVO <span class="brand-title-accent">DIGITAL</span></span>
+          <span class="brand-tagline">STUDIO &bull; CREATIVE LAB</span>
+        </div>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link active">Services</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-cta-group">
+        <a href="contact.html" class="btn btn-primary btn-sm">
+          <span>Let's Talk</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+        <button type="button" class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-drawer" id="mobileNavDrawer" role="dialog" aria-modal="true">
+    <div>
+      <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 32px;">
+        <img src="assets/logo/zentivo-logo.png" alt="Zentivo Logo" width="36" height="36" style="border-radius: 6px;">
+        <span style="font-family: var(--font-heading); font-size: 1.2rem; font-weight: 800; color: #fff;">ZENTIVO <span style="color: var(--accent-lime);">DIGITAL</span></span>
+      </div>
+      <ul class="mobile-nav-list">
+        <li><a href="index.html" class="mobile-nav-link">Home <span>&rarr;</span></a></li>
+        <li><a href="about.html" class="mobile-nav-link">About <span>&rarr;</span></a></li>
+        <li><a href="services.html" class="mobile-nav-link active">Services <span>&rarr;</span></a></li>
+        <li><a href="projects.html" class="mobile-nav-link">Projects <span>&rarr;</span></a></li>
+        <li><a href="contact.html" class="mobile-nav-link">Contact <span>&rarr;</span></a></li>
+      </ul>
+    </div>
+    <div class="mobile-nav-footer">
+      <a href="contact.html" class="btn btn-primary" style="width: 100%;">Let's Talk</a>
+      <p style="font-size: 0.8rem; color: var(--text-dark); text-align: center;">Founded by VIMALKUMAR M</p>
+    </div>
+  </div>
+  <div class="mobile-backdrop" id="mobileBackdrop"></div>
+
+  <!-- Page Header -->
+  <main>
+    <section class="section-spacing" style="padding-top: calc(var(--header-height) + 50px); padding-bottom: 20px;">
+      <div class="container">
+        <div class="section-header reveal reveal-up">
+          <span class="section-badge">
+            <span class="pulse-dot"></span>
+            OUR CAPABILITIES
+          </span>
+          <h1 class="section-title">Comprehensive Web &amp; Digital Solutions</h1>
+          <p class="section-desc">
+            We provide targeted, end-to-end digital services tailored specifically for local businesses, ambitious startups, entrepreneurs, and small companies.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="section-spacing" style="padding-top: 0;">
+      <div class="container">
+        <div class="services-grid">
+          <!-- 1. Website Development -->
+          <article class="service-card reveal reveal-up stagger-1">
+            <div class="service-card-top">
+              <div class="service-icon-box">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <h3>Website Development</h3>
+              <p>Standards-compliant, fast-loading web applications built with semantic HTML5, modern CSS3, and high-performance Vanilla JavaScript.</p>
+              <ul class="service-features-list">
+                <li class="service-feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Semantic HTML5 & clean component code</span>
+                </li>
+                <li class="service-feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Zero unnecessary framework bloat or dependencies</span>
+                </li>
+                <li class="service-feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Sub-second page speeds & Core Web Vitals optimization</span>
+                </li>
+              </ul>
+            </div>
+            <div class="service-card-footer">
+              <button type="button" class="service-learn-more-btn" onclick="openServiceModal('web-development')">
+                <span>Learn More Details</span>
+                <span>&rarr;</span>
+              </button>
+              <a href="contact.html?service=Website%20Development" class="btn btn-secondary btn-sm">Get Quotation</a>
+            </div>
+          </article>
+
+          <!-- 2. Website Design -->
+          <article class="service-card reveal reveal-up stagger-2">
+            <div class="service-card-top">
+              <div class="service-icon-box">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg>
+              </div>
+              <h3>Website Design</h3>
+              <p>Bespoke visual interfaces designed with modern typography, tasteful dark themes, subtle glow accents, and seamless visual hierarchy.</p>
+              <ul class="service-features-list">
+                <li class="service-feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Sophisticated dark charcoal & electric lime identity</span>
+                </li>
+                <li class="service-feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Tailored UI/UX wireframes & interactive prototypes</span>
+                </li>
+                <li class="service-feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Accessible contrast ratios and readable typography</span>
+                </li>
+              </ul>
+            </div>
+            <div class="service-card-footer">
+              <button type="button" class="service-learn-more-btn" onclick="openServiceModal('web-design')">
+                <span>Learn More Details</span>
+                <span>&rarr;</span>
+              </button>
+              <a href="contact.html?service=Website%20Design" class="btn btn-secondary btn-sm">Get Quotation</a>
+            </div>
+          </article>
+
+          <!-- 3. Responsive Web Design -->
+          <article class="service-card reveal reveal-up stagger-3">
+            <div class="service-card-top">
+              <div class="service-icon-box">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+              </div>
+              <h3>Responsive Web Design</h3>
+              <p>Tailored layouts that adjust smoothly to mobile phones, tablets, laptops, and ultra-wide screens without compromise.</p>
+              <ul class="service-features-list">
+                <li class="service-feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Mobile-first thumb-friendly navigation design</span>
+                </li>
+                <li class="service-feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Adaptive viewport scaling with CSS clamp()</span>
+                </li>
+                <li class="service-feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Cross-device physical screen verification</span>
+                </li>
+              </ul>
+            </div>
+            <div class="service-card-footer">
+              <button type="button" class="service-learn-more-btn" onclick="openServiceModal('responsive-design')">
+                <span>Learn More Details</span>
+                <span>&rarr;</span>
+              </button>
+              <a href="contact.html?service=Responsive%20Web%20Design" class="btn btn-secondary btn-sm">Get Quotation</a>
+            </div>
+          </article>
+
+          <!-- 4. Digital Marketing -->
+          <article class="service-card reveal reveal-up stagger-4">
+            <div class="service-card-top">
+              <div class="service-icon-box">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 6l-9.5 9.5-5-5L1 18"></path><polyline points="17 6 23 6 23 12"></polyline></svg>
+              </div>
+              <h3>Digital Marketing</h3>
+              <p>Smart online promotion strategies that connect your brand with active local clients, entrepreneurs, and high-value customer prospects.</p>
+              <ul class="service-features-list">
+                <li class="service-feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Local SEO & Google Business Profile positioning</span>
+                </li>
+                <li class="service-feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Direct lead acquisition funnels & WhatsApp routing</span>
+                </li>
+                <li class="service-feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Organic social positioning for local market reach</span>
+                </li>
+              </ul>
+            </div>
+            <div class="service-card-footer">
+              <button type="button" class="service-learn-more-btn" onclick="openServiceModal('digital-marketing')">
+                <span>Learn More Details</span>
+                <span>&rarr;</span>
+              </button>
+              <a href="contact.html?service=Digital%20Marketing" class="btn btn-secondary btn-sm">Get Quotation</a>
+            </div>
+          </article>
+
+          <!-- 5. Landing Page Development -->
+          <article class="service-card reveal reveal-up stagger-5">
+            <div class="service-card-top">
+              <div class="service-icon-box">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              </div>
+              <h3>Landing Page Development</h3>
+              <p>Conversion-engineered single-page sites designed to showcase specific services, capture inquiries, and maximize campaign ROI.</p>
+              <ul class="service-features-list">
+                <li class="service-feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Persuasive value hierarchy engineered for conversions</span>
+                </li>
+                <li class="service-feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Friction-free inquiry forms with client-side validation</span>
+                </li>
+                <li class="service-feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Ultra-fast load times reducing paid ad bounce</span>
+                </li>
+              </ul>
+            </div>
+            <div class="service-card-footer">
+              <button type="button" class="service-learn-more-btn" onclick="openServiceModal('landing-pages')">
+                <span>Learn More Details</span>
+                <span>&rarr;</span>
+              </button>
+              <a href="contact.html?service=Landing%20Page%20Development" class="btn btn-secondary btn-sm">Get Quotation</a>
+            </div>
+          </article>
+
+          <!-- 6. Business Website Solutions -->
+          <article class="service-card reveal reveal-up stagger-6">
+            <div class="service-card-top">
+              <div class="service-icon-box">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+              </div>
+              <h3>Business Website Solutions</h3>
+              <p>Complete turnkey digital presence packages designed to establish undeniable professionalism and trust for local companies.</p>
+              <ul class="service-features-list">
+                <li class="service-feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Full multi-page company structure & credentials</span>
+                </li>
+                <li class="service-feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Founder attribution, mission & value highlights</span>
+                </li>
+                <li class="service-feature-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Multi-channel contact integration (Phone, WhatsApp, Email)</span>
+                </li>
+              </ul>
+            </div>
+            <div class="service-card-footer">
+              <button type="button" class="service-learn-more-btn" onclick="openServiceModal('business-solutions')">
+                <span>Learn More Details</span>
+                <span>&rarr;</span>
+              </button>
+              <a href="contact.html?service=Business%20Website%20Solutions" class="btn btn-secondary btn-sm">Get Quotation</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ & Service Standards Section -->
+    <section class="section-spacing" style="background: rgba(13, 18, 29, 0.45);">
+      <div class="container">
+        <div class="section-header reveal reveal-up">
+          <span class="section-badge">
+            <span class="pulse-dot"></span>
+            TRANSPARENCY
+          </span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-desc">
+            Direct, straightforward answers about how we build and deliver digital projects.
+          </p>
+        </div>
+
+        <div class="why-grid" style="grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));">
+          <div class="why-card reveal reveal-up stagger-1">
+            <h4>Why Vanilla HTML, CSS &amp; JavaScript?</h4>
+            <p>
+              Vanilla code eliminates unnecessary dependencies, security vulnerabilities, and build tool breakage. It results in pages that load instantly, require minimal hosting costs, and remain maintainable for years without complex updates.
+            </p>
+          </div>
+
+          <div class="why-card reveal reveal-up stagger-2">
+            <h4>How long does a website project take?</h4>
+            <p>
+              Most standard business websites and landing pages are completed within 7 to 14 business days, depending on scope, content preparation, and review speed.
+            </p>
+          </div>
+
+          <div class="why-card reveal reveal-up stagger-3">
+            <h4>Will my website work properly on mobile phones?</h4>
+            <p>
+              Yes, 100%. Every project is built mobile-first and tested thoroughly across iPhone, Android, tablets, and desktop resolutions.
+            </p>
+          </div>
+
+          <div class="why-card reveal reveal-up stagger-4">
+            <h4>How do inquiries reach my business?</h4>
+            <p>
+              We integrate direct WhatsApp routing, click-to-call buttons, and mailto email triggers. We also offer integration with third-party form services (such as Formspree or EmailJS) for direct inbox delivery.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="container cta-banner-section reveal reveal-scale">
+      <div class="cta-banner-card">
+        <div class="cta-banner-content">
+          <span class="section-badge">
+            <span class="pulse-dot"></span>
+            GET STARTED
+          </span>
+          <h2>Have a Project in Mind? Let's Build It Right.</h2>
+          <p>
+            Tell us about your business goals and we will prepare a clear, honest project roadmap tailored to your budget.
+          </p>
+          <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+            <a href="contact.html" class="btn btn-primary">
+              <span>Send Project Inquiry</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="https://wa.me/9196556 04042?text=Hello%20Zentivo%20Digital!%20I%20have%20questions%20about%20your%20services." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+              <span>Chat on WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-link">
+            <div class="brand-logo-wrap">
+              <img src="assets/logo/zentivo-logo.png" alt="Zentivo Digital Logo" class="brand-logo-img" width="44" height="44">
+            </div>
+            <div class="brand-title-group">
+              <span class="brand-title">ZENTIVO <span class="brand-title-accent">DIGITAL</span></span>
+              <span class="brand-tagline">DIGITAL AGENCY &bull; STUDIO</span>
+            </div>
+          </a>
+          <p class="footer-desc">
+            We build digital experiences that move businesses forward through creative web development, modern design, and smart digital marketing.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Navigation</h5>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About Company</a></li>
+            <li><a href="services.html" class="footer-link">Our Services</a></li>
+            <li><a href="projects.html" class="footer-link">Portfolio &amp; Work</a></li>
+            <li><a href="contact.html" class="footer-link">Contact &amp; Inquiries</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Core Services</h5>
+          <ul class="footer-links-list">
+            <li><a href="services.html" class="footer-link">Website Development</a></li>
+            <li><a href="services.html" class="footer-link">Website Design</a></li>
+            <li><a href="services.html" class="footer-link">Responsive Web Design</a></li>
+            <li><a href="services.html" class="footer-link">Digital Marketing</a></li>
+            <li><a href="services.html" class="footer-link">Landing Pages</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <div class="footer-contact-info">
+            <div class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span>+91 96556 04042</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <a href="mailto:zentiprojects@gmail.com" style="color: inherit;">zentiprojects@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 ZENTIVO DIGITAL. All rights reserved.</div>
+        <div class="footer-founder-badge">Founded by <strong>VIMALKUMAR M</strong></div>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" class="back-to-top-btn" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+  </button>
+
+  <!-- Interactive Service Detail Modal Container -->
+  <div class="service-modal" id="serviceModal"></div>
+
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+
